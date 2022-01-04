@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BinaryPow</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="headerContainer">
+        <h1>BinaryPow Web</h1>
+    </div>
+
+    <div class="divStartGame" id="divStartGame">
+        <h2>Elige en tu mente un número del 1 al 63</h2>
+        <h4>Cuando estés listo, haz click en Start Game</h4>
+        <input type="image" class="btnStartGame" src="images/buttons/btnStart.png" id="btnStartGame" onclick="startGame()">
+    </div>
+
+    <div class="question" id="question">
+        <p>¿Tu número está en esta tarjeta?</p>
+    </div>
+
+    <div class="DivCardsCarroussel">
+        <img class="card1" id="card1" src="images/cards/Card1.png" alt="BinaryPowCard1">
+        <img class="card2" id="card2" src="images/cards/Card2.png" alt="BinaryPowCard2">
+        <img class="card3" id="card3" src="images/cards/Card3.png" alt="BinaryPowCard3">
+        <img class="card4" id="card4" src="images/cards/Card4.png" alt="BinaryPowCard4">
+        <img class="card5" id="card5" src="images/cards/Card5.png" alt="BinaryPowCard5">
+        <img class="card6" id="card6" src="images/cards/Card6.png" alt="BinaryPowCard6">
+        
+
+    </div>
+
+    <div class="divPreviowsAndNext" id="divPreviowsAndNext">
+        <input type="image" class="btnSI" id="btnSI" onclick="yesClick()" src="images/buttons/btnSI2.png" alt="BinaryPowBtnSi">
+        <input type="image" class="btnNO" id="btnNO" onclick="noClick()" src="images/buttons/btnNO.png" alt="BinaryPowBtnNo">
+    </div>
+    <div class="results" id="results">
+        <h1 class="lblGuessedNumber" id="lblGuessedNumber">Tu número es el:  </h1>
+        <input type="image" class="btnRestart" id="btnRestart" onclick="startGame()" src="images/buttons/btnRestart.png" alt="BinaryPowRestartGame">
+        <br>
+        <br>
+        <h1 class="guessedNumber" id="guessedNumber"></h1>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
