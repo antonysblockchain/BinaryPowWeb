@@ -6,6 +6,7 @@ function startGame() {
   document.getElementById("question").style.display = "flex";
   document.getElementById("divPreviowsAndNext").style.display = "flex";
   document.getElementById("divStartGame").style.visibility = "hidden";
+  document.getElementById("lblGuessedNumber").textContent ="Tu número es el: ";
   currentCard = 1;
   sumOfCards = 0;
 }
@@ -90,15 +91,20 @@ function noClick() {
       break;
 
     case (currentCard = 6):
-      document.getElementById("card6").style.display = "none";
-      document.getElementById("question").style.display = "none";
-      document.getElementById("divPreviowsAndNext").style.display = "none";
-
       if (sumOfCards == 0) {
         document.getElementById("results").style.visibility = "visible";
         document.getElementById("lblGuessedNumber").textContent =
           "No has elegido ningún número!";
+      }else{
+        document.getElementById("lblGuessedNumber").textContent =
+          "Tu número es el: ";
       }
+      document.getElementById("card6").style.display = "none";
+      document.getElementById("question").style.display = "none";
+      document.getElementById("divPreviowsAndNext").style.display = "none";
+
+      
+      
       document.getElementById("results").style.visibility = "visible";
       document.getElementById("guessedNumber").textContent = sumOfCards;
       currentCard = 0;
