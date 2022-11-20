@@ -7,6 +7,6 @@ I found about this game while reading a phisical <a href="https://www.oceano.com
 
 <p>This repository contains the web version of the game</p>
 
-<p>There are still so many bugs to fix. Be patinent, I'm waiting for a miracle to have time ti fix them!</p>
+<p>There are still so many bugs to fix. Most of them related to the mobile view. Be patinent, I'm waiting for a miracle to have time ti fix them!</p>
 
 <p>Feel free to use the code, refactor and share it.</p>
